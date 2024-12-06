@@ -1,0 +1,271 @@
+
+/* Basic navbar styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004d00; /* Dark green background */
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-left .company-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-center {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    vertical-align: middle;
+}
+
+.nav-menu li a:hover {
+    background-color: #FF5722; /* Hover background color */
+    color: #fff;
+}
+
+.dropdown .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 5px; /* Lower the profile button slightly */
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #FF5722; /* Hover background color */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #004d00;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 5px; /* Close to the button to prevent gap */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF5722; /* Hover background color */
+}
+
+/* Ensure the dropdown stays open when hovering over the dropdown content */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/* Hero section styles */
+.hero-section {
+    padding: 100px 20px;
+    background: url('/foodApp/images/login.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin-top: 0; /* Remove the margin-top */
+    min-height: 400px;
+}
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Restaurants section styles */
+.restaurants {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Adds space between hero section and restaurants */
+}
+
+.restaurant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.restaurant-card {
+    width: 300px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #f9f9f9;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}
+
+.restaurant-details {
+    padding: 15px;
+}
+
+.restaurant-details h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.restaurant-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Style for card anchor */
+.restaurant-anchor {
+    text-decoration: none;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #004d00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-center h3, .footer-right h3 {
+    margin-top: 0;
+}
+
+.footer-center p {
+    margin: 5px 0;
+}
+
+.footer-center i {
+    margin-right: 5px;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-right a:hover {
+    color: #f0f0f0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
